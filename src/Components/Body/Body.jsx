@@ -22,27 +22,67 @@ const Body=()=>
         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
     </svg>
 </div>
-            <Grid xs={12} container>
+            <Grid xs={12} container elevation={0}>
                 
-                <Grid xs={6} sx={{backgroundColor:'#030626', height:'100%', height:'550px', }} >
-                        <Typography variant="h2" sx={{display: 'flex',justifyContent:'center', color:'grey',opacity:'0.5',fontFamily:'Cursive',fontWeight:'bold',paddingTop:'30px',}}>
-                           PROT-ON
-                        </Typography>
+                <Grid xs={6} sx={{backgroundColor:'#030626', height:'100%', height:'400px', paddingLeft:'250px'}} elevation={0}>
+                       
+                        {/* <Typography  sx={{display: 'flex',justifyContent:'left', color:'grey',opacity:'0.5',fontFamily:'Cursive',fontWeight:'bold',paddingTop:'30px',fontSize:'2vw'}}>
+                         Biscuite Hiperproteic cu PURE-WHEY, Low-Sugar, in doar 45 g                         </Typography>
                         
-                        <Typography variant="h4" sx={{display: 'flex',justifyContent:'right', color:'grey',fontFamily:'Italic',paddingTop:'30px',}}>
+                        <Typography  sx={{display: 'flex', color:'grey',fontFamily:'Italic',paddingTop:'30px',fontSize:'1vw'}}>
                         Biscuite Hiperproteic cu PURE-WHEY, Low-Sugar, in doar 45g
-                        </Typography>
+                        </Typography> */}
+                           <Typography sx={{fontFamily: 'Aoboshi One',
+                            fontStyle: 'normal',
+                            fontWeight: '400',
+                            fontSize: '20px',
+                            lineHeight: '29px',
+                            color: '#FFFFFF',
+                            }}>
+                           Biscuite Hiperproteic cu PURE-WHEY, Low-Sugar, in doar 45 g 
+                           </Typography>
+                           <Typography sx={{
+                            fontFamily: 'Arbutus',
+                            fontStyle: 'normal',
+                            fontWeight: '400px',
+                            fontSize: '40px',
+                            color: 'rgba(217, 147, 51, 0.91)',
+                            display:'inline-block'}}>
+                           PROT-ON.
+                           </Typography>
+                           <Typography sx={{fontFamily: 'Arbutus',
+                            fontStyle: 'normal',
+                            fontWeight: '400',
+                            fontSize: '40px',
+                            lineHeight: '50px',
+                            color: 'rgba(217, 147, 51, 0.91)'}}>
+                           GUST FANTASTIC!
+                           </Typography>
+                           <Typography sx={{fontFamily: 'Aoboshi One',
+                            fontStyle: 'normal',
+                            fontWeight: '400',
+                            fontSize: '24px',
+                            lineHeight: '35px',
+
+                            color: '#FFFFFF',
+                            }}>
+                           Poṭi deja să te delectezi atunci când le dai muşchilor săi combustibilul necesar într-o gustare cu peste 31g de proteină! 
+                           </Typography>
+                      
+
+                        
                 </Grid>
         
-                <Grid xs={6}  sx={{
-        
-                        height:'550px',
+                <Grid xs={6}spacing={-1} elevation={0}  sx={{
+                        style:'none',
+                        height:'400px',
                         overflow:'visible',
                         backgroundColor:'#030626',
                         display:'inline-flex',
                         direction:"row",
                         justifyContent:"center",
-                        alignItems:"center"
+                        alignItems:"center",
+                    
                     }}>
                         <img src={`${poza2}`} alt="logo Prot-on" className={'poza1'} />
                 </Grid>
