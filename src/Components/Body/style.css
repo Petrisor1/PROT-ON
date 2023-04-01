@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Arbutus';
+    src:url(../../fonts/Arbutus/Arbutus-Regular.ttf);
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+  @font-face {
+    font-family: 'Capriola';
+    src:url(../../fonts/Capriola/Capriola-Regular.ttf);
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+  :root {
+    --bcolor:rgba(28, 27, 29, 1);
+    --white: #ffffff;
+    
+  }
 .custom-shape-divider-top-1679086423 {
     position: absolute;
     top: 0;
@@ -16,4 +34,336 @@
 
 .custom-shape-divider-top-1679086423 .shape-fill {
     fill: #FFFFFF;
+}
+
+.containerBody
+{
+height:40vh;
+width:100%;
+
+display:flex;
+flex-direction: row;
+}
+
+.leftSideBody
+{
+    style:none;
+width: 50%;
+height: 100%;
+background-color:  var(--bcolor);
+display: flex;
+flex-flow: column;
+gap:13.5px;
+align-items: flex-end;
+
+}
+.leftSideControl
+{
+    style:none;
+width: 80%;
+height: 100%;
+background-color: var(--bcolor);
+display: flex;
+flex-flow: column;
+gap:13.5px;
+align-items:flex-start;
+justify-content:center;
+
+}
+.leftSideControl>:nth-child(1)
+{
+    style:none;
+    font-family: 'Aoboshi One';
+font-style: normal;
+font-weight: 400;
+font-size: 1.1rem;
+color: #FFFFFF;
+letter-spacing: 0.06em;
+}
+.leftSideControl>:nth-child(2)
+{style:none;
+    font-family: 'Arbutus';
+font-style: normal;
+font-weight: 400;
+font-size: 2.5rem;
+
+
+color: rgba(217, 147, 51, 0.91);
+}
+.leftSideControl>:nth-child(3)
+{
+    font-family: 'Arbutus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+   
+    font-family: 'Arbutus';
+    color: rgba(217, 147, 51, 0.91);
+}
+.leftSideControl>:nth-child(4)
+{
+    font-family: 'Aoboshi One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.rightSideBody
+{
+    style:none;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bcolor);
+    display: flex;
+    flex-flow:row;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    color:white;
+    
+}
+
+.spatiu
+{
+    height:8vh;
+    width: 100%;
+}
+.containerPagina2
+{
+    height:500px;
+    width: 100%;
+ background-color:var(--bcolor); 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+.containerPagina2 >:nth-child(1){
+    height:200px;
+    width:70%;
+    background-color:rgb(255, 249, 231);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10%;
+    align-self: self-start;
+    border-radius: 0 50px 50px 0;
+    border:5px solid rgba(253, 202, 103, 1);
+    border-left: 0px;
+    letter-spacing: 0.06em;
+}
+.containerPagina2 >:nth-child(2){
+    height:200px;
+    width:70%;
+    background-color:rgb(255, 249, 231);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10%;
+    align-self: self-end;
+    border-radius: 50px 0 0 50px;
+    border:5px solid rgba(253, 202, 103, 1);
+    border-right: 0px;
+    letter-spacing: 0.06em;
+}
+.containerPagina2 >:nth-child(3){
+    height:200px;
+    width:70%;
+    background-color:rgb(255, 249, 231);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10%;
+    align-self: self-start;
+    border-radius: 0 50px 50px 0;
+    border:5px solid rgba(253, 202, 103, 1);
+    border-left: 0px;
+    letter-spacing: 0.06em;
+}
+.containerPagina2 >div >span
+{
+    font-size:1.3vw;
+    font-family: 'Capriola';
+    letter-spacing: 0.06em;
+}
+.containerPagina2 >div>img{
+    height:120px;
+    width:120px;
+
+}
+.custom-shape-divider-bottom-1679606673 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: translate(0px,1px);
+}
+
+.custom-shape-divider-bottom-1679606673 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+   
+    height: 70px;
+}
+
+.custom-shape-divider-bottom-1679606673 .shape-fill {
+    fill: var(--bcolor);
+ 
+}
+
+/* ///////// */
+
+.custom-shape-divider-top-1679606894 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg) translate(0px,1px);
+    
+}
+
+.custom-shape-divider-top-1679606894 svg {
+    position: relative;
+    display: block;
+    width: calc(146% + 1.3px);
+    height: 49px;
+}
+
+.custom-shape-divider-top-1679606894 .shape-fill {
+    fill: var(--bcolor);
+}
+.span1 {
+    display:none;
+}
+.span2{
+    display:none;
+}
+@media screen and (max-width: 600px) {
+    .containerBody
+{
+height:65vh;
+width:100%;
+display:flex;
+flex-direction: column;
+background-color: var(--bcolor);
+gap:5px;
+}
+.leftSideBody
+{
+    style:none;
+width: 100%;
+height: 50%;
+background-color:  var(--bcolor);
+display: flex;
+flex-flow: column;
+gap:5px;
+align-items: flex-end;
+
+}
+.leftSideControl
+{
+    style:none;
+width: 100%;
+height: 100%;
+background-color: var(--bcolor);
+display: flex;
+flex-flow: column;
+gap:13.5px;
+align-items:center;
+justify-content:center;
+}
+.leftSideControl>:nth-child(1)
+{   margin-top:20px;
+    style:none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+color: #FFFFFF;
+letter-spacing: 0.06em;
+}
+.leftSideControl>:nth-child(2)
+{style:none;
+    font-family: 'Arbutus';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5rem;
+color: rgba(217, 147, 51, 0.91);
+}
+.leftSideControl>:nth-child(3)
+{
+    font-family: 'Arbutus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+   
+    font-family: 'Arbutus';
+    color: rgba(217, 147, 51, 0.91);
+    
+}
+.leftSideControl>:nth-child(4)
+{
+    font-family: 'Aoboshi One';
+    font-style: normal;
+    line-height: 1rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    display:none;
+}
+.rightSideBody
+{
+    style:none;
+    width: 100%;
+    height: 50%;
+    background-color: var(--bcolor);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    
+}
+.containerPagina2 >div >span
+{
+    font-size:3vw;
+    font-family: 'Capriola';
+}
+.containerPagina2 >div{
+    height:200px;
+    width:80%;
+    background-color:rgba(252, 197, 88, 0.16);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10%;
+    
+}
+.span1 {
+    display: inline-block;
+    style:none;
+    font-family: 'Arbutus';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5rem;
+
+
+color: rgba(217, 147, 51, 0.91);
+}
+.span2{
+    display: inline-block;
+    style:none;
+    font-family: 'Aoboshi One';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+}
 }

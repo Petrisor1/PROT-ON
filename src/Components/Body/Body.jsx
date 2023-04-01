@@ -4,12 +4,40 @@ import Grid from '@mui/material/Grid';
 import { Typography,Container } from '@mui/material';
 import poza2 from '../../Images/picture2.png';
 import useStyles from '../Navbar/style.js';
+import sugar from '../../Images/LowSugar_Pic2.png';
+import meal from '../../Images/Meal_Pic2.png';
+import protein from '../../Images/Protein_Pic23.png';
+import {AnimatePresence,motion} from 'framer-motion/dist/framer-motion';
+//import {FadeInTextOnScroll} from './FadeInTextOnScroll.jsx';
 
-const Body=()=>
+
+const Body=({isVisible})=>
 {
     const classes=useStyles;
+
+    const container = {
+        hidden: { opacity: 0 },
+        show: {
+          opacity: 1,
+          transition: {
+            delayChildren: 10,
+            duration:2
+          }
+        }
+      }
+      const animLungime=
+      {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+              delayChildren: 10,
+              duration:2
+            }
+          }
+      }
+
     return (
-        
         <>
         
                 {/* Grid folosit doar pentru spatiu dintre body si navbar*/}
@@ -22,79 +50,80 @@ const Body=()=>
         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
     </svg>
 </div>
-            <Grid xs={12} container elevation={0}>
+           
+           <div className="containerBody">
+            <div className="leftSideBody">
+               
+                < motion.div  variants={container}
+                initial="hidden"
+                animate="show"
+                className="leftSideControl">
+                    {/* <FadeInTextOnScroll> */}
+                    <span >
+                    Biscuite Hiperproteic cu PURE-WHEY, Low-Sugar, in doar 45 g 
+                    </span>
+                     {/* </FadeInTextOnScroll>  */}
+                <span>
+                PROT-ON.  
+                </span>
+                <span>
+                GUST FANTASTIC!
+                </span>
+                <span>
+                Poṭi deja să te delectezi atunci când le dai muşchilor  combustibilul necesar într-o gustare cu peste 31g de proteină! 
+                </span>
+                </motion.div>
+            </div>
+            <div className="rightSideBody">
+                <img src={`${poza2}`} alt="logo Prot-on" className={'poza1'} />
+                <span className="span2">
+                Poṭi deja să te delectezi atunci când le dai muşchilor săi combustibilul necesar într-o gustare cu peste 31g de proteină! 
+                </span>
+            </div>
+               
                 
-                <Grid xs={6} sx={{backgroundColor:'#030626', height:'100%', height:'400px', paddingLeft:'250px'}} elevation={0}>
-                       
-                        {/* <Typography  sx={{display: 'flex',justifyContent:'left', color:'grey',opacity:'0.5',fontFamily:'Cursive',fontWeight:'bold',paddingTop:'30px',fontSize:'2vw'}}>
-                         Biscuite Hiperproteic cu PURE-WHEY, Low-Sugar, in doar 45 g                         </Typography>
-                        
-                        <Typography  sx={{display: 'flex', color:'grey',fontFamily:'Italic',paddingTop:'30px',fontSize:'1vw'}}>
-                        Biscuite Hiperproteic cu PURE-WHEY, Low-Sugar, in doar 45g
-                        </Typography> */}
-                           <Typography sx={{fontFamily: 'Aoboshi One',
-                            fontStyle: 'normal',
-                            fontWeight: '400',
-                            fontSize: '20px',
-                            lineHeight: '29px',
-                            color: '#FFFFFF',
-                            }}>
-                           Biscuite Hiperproteic cu PURE-WHEY, Low-Sugar, in doar 45 g 
-                           </Typography>
-                           <Typography sx={{
-                            fontFamily: 'Arbutus',
-                            fontStyle: 'normal',
-                            fontWeight: '400px',
-                            fontSize: '40px',
-                            color: 'rgba(217, 147, 51, 0.91)',
-                            display:'inline-block'}}>
-                           PROT-ON.
-                           </Typography>
-                           <Typography sx={{fontFamily: 'Arbutus',
-                            fontStyle: 'normal',
-                            fontWeight: '400',
-                            fontSize: '40px',
-                            lineHeight: '50px',
-                            color: 'rgba(217, 147, 51, 0.91)'}}>
-                           GUST FANTASTIC!
-                           </Typography>
-                           <Typography sx={{fontFamily: 'Aoboshi One',
-                            fontStyle: 'normal',
-                            fontWeight: '400',
-                            fontSize: '24px',
-                            lineHeight: '35px',
+           </div>
+           
+         <div class="custom-shape-divider-bottom-1679186144">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div> 
 
-                            color: '#FFFFFF',
-                            }}>
-                           Poṭi deja să te delectezi atunci când le dai muşchilor săi combustibilul necesar într-o gustare cu peste 31g de proteină! 
-                           </Typography>
-                      
-
-                        
-                </Grid>
-        
-                <Grid xs={6}spacing={-1} elevation={0}  sx={{
-                        style:'none',
-                        height:'400px',
-                        overflow:'visible',
-                        backgroundColor:'#030626',
-                        display:'inline-flex',
-                        direction:"row",
-                        justifyContent:"center",
-                        alignItems:"center",
-                    
-                    }}>
-                        <img src={`${poza2}`} alt="logo Prot-on" className={'poza1'} />
-                </Grid>
-
-           </Grid>
-           <div class="custom-shape-divider-bottom-1679186144">
+        <div className="spatiu">
+            
+        </div>
+        <div class="custom-shape-divider-top-1679601552">
+</div>
+<div class="custom-shape-divider-bottom-1679606673">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
     </svg>
-    </div>
-      
-       </>
+</div>
+                {/* Cea de a doua pagina */}
+            <div className="containerPagina2">
+
+                <div>
+                       <img src={protein} alt="Protein Pic" />
+                        <span>Aport hiperproteic ce provin exclusiv dintr-un concentrat proteic de zer si BCCA de cea mai înalta calitate.</span>
+                </div>
+                <div>
+                    <img src={sugar} alt="Sugar Pic" />
+                    <span>Low Sugar, bogat în fibre conṭine şi un probiotic benefic pentru sănătate care îmbunătăṭeşte microflora intestinală. </span>
+                </div>
+                <div>
+                    <img src={meal} alt="Meal Pic" />
+                    <span>Acoperă 50-75% dintr-o masă pentru sportivi.</span>
+                </div>
+
+                </div>
+                <div class="custom-shape-divider-top-1679606894">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+</div> 
+   <div className="spatiu"/>
+      </>
     );
 
 }
