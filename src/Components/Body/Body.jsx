@@ -60,7 +60,7 @@ const Body=({isVisible})=>
                 className="leftSideControl">
                     {/* <FadeInTextOnScroll> */}
                     <span >
-                    Biscuite Hiperproteic cu PURE-WHEY, Low-Sugar, in doar 45 g 
+                    Biscuite Hiperproteic cu PURE-WHEY, Low-Sugar, în doar 45 g 
                     </span>
                      {/* </FadeInTextOnScroll>  */}
                 <span>
@@ -77,7 +77,7 @@ const Body=({isVisible})=>
             <div className="rightSideBody">
                 <img src={`${poza2}`} alt="logo Prot-on" className={'poza1'} />
                 <span className="span2">
-                Poṭi deja să te delectezi atunci când le dai muşchilor săi combustibilul necesar într-o gustare cu peste 31g de proteină! 
+                Poṭi deja să te delectezi atunci când le dai muşchilor  combustibilul necesar într-o gustare cu peste 31g de proteină! 
                 </span>
             </div>
                
@@ -105,11 +105,11 @@ const Body=({isVisible})=>
 
                 <div>
                        <img src={protein} alt="Protein Pic" />
-                        <span>Aport hiperproteic ce provin exclusiv dintr-un concentrat proteic de zer si BCCA de cea mai înalta calitate.</span>
+                        <span>Aport hiperproteic ce provine exclusiv dintr-un concentrat proteic de zer si BCCA de cea mai înalta calitate.</span>
                 </div>
                 <div>
                     <img src={sugar} alt="Sugar Pic" />
-                    <span>Low Sugar, bogat în fibre conṭine şi un probiotic benefic pentru sănătate care îmbunătăṭeşte microflora intestinală. </span>
+                    <span>Low Sugar, bogat în fibre, conṭine şi un probiotic benefic pentru sănătate care îmbunătăṭeşte microflora intestinală. </span>
                 </div>
                 <div>
                     <img src={meal} alt="Meal Pic" />

@@ -2,6 +2,7 @@
   "name": "proton",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://prot-on.ro",
   "dependencies": {
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.11",

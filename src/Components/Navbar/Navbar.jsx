@@ -18,6 +18,8 @@ import style from './style.css';
 import logo from '../../Images/Logo.png';
 import poza1 from '../../Images/picture1.png';
 import useStyles from './style.js';
+import {AiOutlineMail} from 'react-icons/ai';
+import {BsPhone} from 'react-icons/bs';
 import {BsFacebook} from 'react-icons/bs';
 import {RiInstagramFill} from 'react-icons/ri';
 import {AnimatePresence,motion} from 'framer-motion/dist/framer-motion';
@@ -175,18 +177,11 @@ const primaryColor='rgba(28, 27, 29, 1)';
             ))} */}
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent:'flex-end',gap:'10px' }}>
-          <motion.a  animate={{                 
-                rotate: 360,
-              }} 
-              transition={{duration:1}}>
-          <BsFacebook fontSize={`${valoare}rem`} color='white'/>
-          </motion.a>
-          <motion.a  animate={{                 
-                rotate: 360,
-              }} 
-              transition={{duration:1}}>
-          <RiInstagramFill fontSize={`${valoare}rem`} color='white' />
-          </motion.a>
+           
+          <div> <BsPhone/><a style={{color:"white"}} href="tel:0040743197995"> 0040743197995 </a></div>
+         <br/>
+          
+                    <div><AiOutlineMail/> <a style={{color:"white"}} href="mailto:roland.mindrila@gmail.com"> roland.mindrila@gmail.com</a> </div>
           </Box>
           {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

@@ -93,6 +93,15 @@ body{
 .headerDivider .shape-fill {
     fill: var(--baseColor);
 }
+@media screen and (max-width: 1160px) {
+.poza1
+{
+    border-radius:  32% 68% 70% 30% / 30% 30% 70% 70% ;
+   width: 70%;
+   height: 100%;
+   border:solid var(--baseColor) 5px; 
+}
+}
 @media screen and (max-width: 700px) {
 
     .custom-shape-divider-bottom-1679186144 {
@@ -158,11 +167,12 @@ body{
     font-size: 15px;
 }
 
+
 .poza1
 {
    border-radius:  32% 68% 70% 30% / 30% 30% 70% 70% ;
-   width: 120px;
-   height: 120px;
+   width: 70%;
+   height: 100%;
    border:solid var(--baseColor) 5px; 
 }
   }
